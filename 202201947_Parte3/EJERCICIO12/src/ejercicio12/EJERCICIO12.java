@@ -16,12 +16,13 @@ public class EJERCICIO12 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner as = new Scanner(System.in);
-        int d=0;
+        int d=1;
         System.out.println("INGRESE UN NUMERO PARA SU FACTORIAL");
         int c = as.nextInt();
-        for(int i = c; i==1 ;i--){
-            d=c*(c*i);
-            //USAR DO WHILE
+        for(int i=2; i<=c ; i++)
+        {
+            d=d*(i);
+            
         }
         System.out.println(("FACTORIAL: ")+ (d));
     }
